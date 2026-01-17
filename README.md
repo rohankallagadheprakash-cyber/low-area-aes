@@ -84,5 +84,5 @@ Not licensed for commercial use.
 
 ## Project status
 
-✅ **Active** — Project is currently under MSc dissertation development.  
+✅ **Completed** — Core implementation finished; future improvements may be explored independently.
 
