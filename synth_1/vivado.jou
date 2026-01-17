@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jul 21 11:35:23 2025
+# Process ID: 18472
+# Current directory: D:/Vivado_2/AES_Encryption_Project/synth_1
+# Command line: vivado.exe -log AES.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AES.tcl
+# Log file: D:/Vivado_2/AES_Encryption_Project/synth_1/AES.vds
+# Journal file: D:/Vivado_2/AES_Encryption_Project/synth_1\vivado.jou
+#-----------------------------------------------------------
+source AES.tcl -notrace

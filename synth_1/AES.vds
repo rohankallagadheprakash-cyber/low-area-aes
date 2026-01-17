@@ -1,0 +1,368 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jul 21 11:35:23 2025
+# Process ID: 18472
+# Current directory: D:/Vivado_2/AES_Encryption_Project/synth_1
+# Command line: vivado.exe -log AES.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AES.tcl
+# Log file: D:/Vivado_2/AES_Encryption_Project/synth_1/AES.vds
+# Journal file: D:/Vivado_2/AES_Encryption_Project/synth_1\vivado.jou
+#-----------------------------------------------------------
+source AES.tcl -notrace
+Command: synth_design -top AES -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22492 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 416.074 ; gain = 97.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AES' [D:/Vivado_2/AES_Encryption_Project/AES.vhd:16]
+INFO: [Synth 8-3491] module 'KeyExpansion' declared at 'D:/Vivado_2/AES_Encryption_Project/KeyExpansion.vhd:5' bound to instance 'U_KeyExpansion' of component 'KeyExpansion' [D:/Vivado_2/AES_Encryption_Project/AES.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'KeyExpansion' [D:/Vivado_2/AES_Encryption_Project/KeyExpansion.vhd:15]
+WARNING: [Synth 8-6014] Unused sequential element w0_reg was removed.  [D:/Vivado_2/AES_Encryption_Project/KeyExpansion.vhd:77]
+WARNING: [Synth 8-6014] Unused sequential element w1_reg was removed.  [D:/Vivado_2/AES_Encryption_Project/KeyExpansion.vhd:78]
+WARNING: [Synth 8-6014] Unused sequential element w2_reg was removed.  [D:/Vivado_2/AES_Encryption_Project/KeyExpansion.vhd:79]
+WARNING: [Synth 8-6014] Unused sequential element w3_reg was removed.  [D:/Vivado_2/AES_Encryption_Project/KeyExpansion.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element temp_g_func_reg was removed.  [D:/Vivado_2/AES_Encryption_Project/KeyExpansion.vhd:83]
+WARNING: [Synth 8-6014] Unused sequential element rcon_val_var_reg was removed.  [D:/Vivado_2/AES_Encryption_Project/KeyExpansion.vhd:85]
+WARNING: [Synth 8-6014] Unused sequential element new_round_key_reg was removed.  [D:/Vivado_2/AES_Encryption_Project/KeyExpansion.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'KeyExpansion' (1#1) [D:/Vivado_2/AES_Encryption_Project/KeyExpansion.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'AES' (2#1) [D:/Vivado_2/AES_Encryption_Project/AES.vhd:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 471.219 ; gain = 152.883
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 471.219 ; gain = 152.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 471.219 ; gain = 152.883
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Vivado_2/AES_Encryption_Project/timing_constraints.xdc]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [D:/Vivado_2/AES_Encryption_Project/timing_constraints.xdc:2]
+Finished Parsing XDC File [D:/Vivado_2/AES_Encryption_Project/timing_constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 999.348 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 999.348 ; gain = 681.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 999.348 ; gain = 681.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 999.348 ; gain = 681.012
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "key_gen_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'AES'
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+               load_data |                              001 |                              001
+          round0_add_key |                              010 |                              010
+    round_normal_process |                              011 |                              011
+     final_round_process |                              100 |                              100
+              done_state |                              101 |                              101
+                  iSTATE |                              110 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'AES'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 999.348 ; gain = 681.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input    128 Bit         XORs := 2     
+	   3 Input    128 Bit         XORs := 1     
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 3     
+	   2 Input      8 Bit         XORs := 15    
++---Registers : 
+	              128 Bit    Registers := 13    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input    128 Bit        Muxes := 1     
+	   7 Input    128 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AES 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input    128 Bit         XORs := 2     
+	   3 Input    128 Bit         XORs := 1     
+	   2 Input      8 Bit         XORs := 15    
++---Registers : 
+	              128 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   7 Input    128 Bit        Muxes := 2     
+	   7 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 4     
+Module KeyExpansion 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 3     
++---Registers : 
+	              128 Bit    Registers := 11    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input    128 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (key_gen_done_reg) is unused and will be removed from module KeyExpansion.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 999.348 ; gain = 681.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 999.348 ; gain = 681.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:38 . Memory (MB): peak = 1108.180 ; gain = 789.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:39 . Memory (MB): peak = 1108.180 ; gain = 789.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1108.180 ; gain = 789.844
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_aes_state_reg_n_0_[103] with 1st driver pin 'current_aes_state_reg[103]/Q' [D:/Vivado_2/AES_Encryption_Project/AES.vhd:188]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_aes_state_reg_n_0_[103] with 2nd driver pin 'current_aes_state_reg[55]/Q' [D:/Vivado_2/AES_Encryption_Project/AES.vhd:188]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_aes_state_reg_n_0_[101] with 1st driver pin 'current_aes_state_reg[101]/Q' [D:/Vivado_2/AES_Encryption_Project/AES.vhd:188]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_aes_state_reg_n_0_[101] with 2nd driver pin 'current_aes_state_reg[53]/Q' [D:/Vivado_2/AES_Encryption_Project/AES.vhd:188]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_aes_state_reg_n_0_[98] with 1st driver pin 'current_aes_state_reg[98]/Q' [D:/Vivado_2/AES_Encryption_Project/AES.vhd:188]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_aes_state_reg_n_0_[98] with 2nd driver pin 'current_aes_state_reg[50]/Q' [D:/Vivado_2/AES_Encryption_Project/AES.vhd:188]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_aes_state_reg_n_0_[96] with 1st driver pin 'current_aes_state_reg[96]/Q' [D:/Vivado_2/AES_Encryption_Project/AES.vhd:188]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_aes_state_reg_n_0_[96] with 2nd driver pin 'current_aes_state_reg[48]/Q' [D:/Vivado_2/AES_Encryption_Project/AES.vhd:188]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net n_0_1148 with 1st driver pin 'i_1148/O' [D:/Vivado_2/AES_Encryption_Project/AES.vhd:59]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net n_0_1148 with 2nd driver pin 'i_1144/O' [D:/Vivado_2/AES_Encryption_Project/AES.vhd:59]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net n_0_1149 with 1st driver pin 'i_1149/O' [D:/Vivado_2/AES_Encryption_Project/AES.vhd:59]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net n_0_1149 with 2nd driver pin 'i_1145/O' [D:/Vivado_2/AES_Encryption_Project/AES.vhd:59]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net n_0_1150 with 1st driver pin 'i_1150/O' [D:/Vivado_2/AES_Encryption_Project/AES.vhd:59]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net n_0_1150 with 2nd driver pin 'i_1146/O' [D:/Vivado_2/AES_Encryption_Project/AES.vhd:59]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net n_0_1151 with 1st driver pin 'i_1151/O' [D:/Vivado_2/AES_Encryption_Project/AES.vhd:59]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net n_0_1151 with 2nd driver pin 'i_1147/O' [D:/Vivado_2/AES_Encryption_Project/AES.vhd:59]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        8|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1108.180 ; gain = 789.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1108.180 ; gain = 789.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1108.180 ; gain = 789.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:41 . Memory (MB): peak = 1108.180 ; gain = 789.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:41 . Memory (MB): peak = 1108.180 ; gain = 789.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |     8|
+|3     |LUT2  |    48|
+|4     |LUT3  |   217|
+|5     |LUT4  |   170|
+|6     |LUT5  |    51|
+|7     |LUT6  |  1008|
+|8     |MUXF7 |    64|
+|9     |FDCE  |  1681|
+|10    |IBUF  |   259|
+|11    |OBUF  |   129|
++------+------+------+
+
+Report Instance Areas: 
++------+-----------------+-------------+------+
+|      |Instance         |Module       |Cells |
++------+-----------------+-------------+------+
+|1     |top              |             |  3636|
+|2     |  U_KeyExpansion |KeyExpansion |  2954|
++------+-----------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:41 . Memory (MB): peak = 1108.180 ; gain = 789.844
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 16 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1108.180 ; gain = 261.715
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:41 . Memory (MB): peak = 1108.180 ; gain = 789.844
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 323 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'AES' is not ideal for floorplanning, since the cellview 'KeyExpansion' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 9 Warnings, 17 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:45 . Memory (MB): peak = 1108.180 ; gain = 802.504
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado_2/AES_Encryption_Project/synth_1/AES.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AES_utilization_synth.rpt -pb AES_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.195 . Memory (MB): peak = 1108.180 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 21 11:36:12 2025...

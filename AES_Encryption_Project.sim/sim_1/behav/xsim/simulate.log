@@ -1,0 +1,14 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Note: --- Starting AES Encryption Test ---
+Time: 30 ns  Iteration: 0  Process: /AES_tb/test_sequence  File: D:/Vivado_2/AES_Encryption_Project/AES_tb.vhd
+Note: Waiting for 'done' signal...
+Time: 40 ns  Iteration: 0  Process: /AES_tb/test_sequence  File: D:/Vivado_2/AES_Encryption_Project/AES_tb.vhd
+Note: Encryption Done!
+Time: 165 ns  Iteration: 3  Process: /AES_tb/test_sequence  File: D:/Vivado_2/AES_Encryption_Project/AES_tb.vhd
+Error: Test FAILED: Encrypted data does NOT match expected ciphertext.
+Time: 175 ns  Iteration: 0  Process: /AES_tb/test_sequence  File: D:/Vivado_2/AES_Encryption_Project/AES_tb.vhd
+Expected: A55C4B07087BDC8D0340B7A68D0E4C96
+Got:      A55BA7BA5C4A49237DXX5FXXXXD0XX56
+Note: --- Test Finished ---
+Time: 195 ns  Iteration: 0  Process: /AES_tb/test_sequence  File: D:/Vivado_2/AES_Encryption_Project/AES_tb.vhd
